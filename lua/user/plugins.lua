@@ -16,6 +16,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
+-- checks for plugins installs and updates whenever plugins.lua is saved
 vim.cmd [[
   augroup packer_user_config
     autocmd!
@@ -24,8 +25,10 @@ vim.cmd [[
 ]]
 
 -- Use a protected call so we don't error out on first use
+-- requiring packer but in a protected way
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
+  vim.notify("Packer couldn't be loaded")
   return
 end
 
@@ -58,6 +61,11 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+
+  -- Markdown
+  use "junegunn/goyo.vim" -- Distraction free typing
+  use "junegunn/limelight.vim" -- highlight the text you are working on
+  use {"iamcco/markdown-preview.nvim", run = "cd app && npm i", cmd="MarkdownPreview"}
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
