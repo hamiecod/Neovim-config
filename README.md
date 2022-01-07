@@ -11,10 +11,27 @@ This configuration has the following features with a lot of features on the way.
 - Search support for keymaps, commands, etc.
 - VSCode like UI (with darkplus colorscheme)
 - Most of the VSCode features
+- Tabnine AI completion
 
 The following features would be added in the future:
 - Support for working with databases within Neovim
 - Floating windows for definitions, using goto-preview.nvim
+
+## Keybinds
+Leader = <kbd>Space</kbd>
+| Keybind            |   Description      |
+| ------------------ | ------------------ |
+| <kbd>Leader</kbd> + <kbd>t</kbd> + <kbd>f</kbd> | Opens a floating terminal window |
+| <kbd>Leader</kbd> + <kbd>t</kbd> + <kbd>h</kbd> | Opens a horizontal terminal window |
+| <kbd>Leader</kbd> + <kbd>t</kbd> + <kbd>v</kbd> | Opens a horizontal vertical window |
+| <kbd>Leader</kbd> + <kbd>t</kbd> + <kbd>t</kbd> | Opens Htop inside a terminal window |
+| <kbd>Leader</kbd> + <kbd>t</kbd> + <kbd>n</kbd> | Opens nodejs console inside a terminal window |
+| <kbd>Leader</kbd> + <kbd>t</kbd> + <kbd>p</kbd> | Opens python console inside a terminal window |
+| <kbd>Leader</kbd> + <kbd>e</kbd> | Opens the file explorer |
+| <kbd>Leader</kbd> + <kbd>f</kbd> | Search for files in the present working directory |
+| <kbd>Leader</kbd> + <kbd>F</kbd> | Search for text in the present working directory |
+| <kbd>Leader</kbd> + <kbd>g</kbd> + <kbd>g</kbd> | Opens lazygit inside neovim |
+| <kbd>Leader</kbd> + <kbd>g</kbd> + <kbd>d</kbd> | Differentiates the current state of a file with the last commit, i.e `git diff` |
 
 ## Try out this config
 
