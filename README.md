@@ -1,6 +1,20 @@
 # Neovim from scratch
+This repository contains the configuration files for a hype-beast Neovim setup. This repository focuses on providing more features than the other popular IDEs while maintaining Neovim's speed and extensibility.
 
-Each video will be associated with a branch so checkout the one you are interested in, you can follow along with this [playlist](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ).
+## Features
+This configuration has the following features with a lot of features on the way.
+- LSP autocompletion
+- Huge Snippet Library support
+- Telescope.nvim for searching files and text
+- Terminal support inside neovim
+- Lazygit support
+- Search support for keymaps, commands, etc.
+- VSCode like UI (with darkplus colorscheme)
+- Most of the VSCode features
+
+The following features would be added in the future:
+- Support for working with databases within Neovim
+- Floating windows for definitions, using goto-preview.nvim
 
 ## Try out this config
 
