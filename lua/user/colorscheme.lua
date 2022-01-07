@@ -1,12 +1,12 @@
 -- darkplus (the vscode theme)
---vim.cmd [[
---try
-  --colorscheme darkplus
---catch /^Vim\%((\a\+)\)\=:E185/
-  --colorscheme default
-  --set background=dark
---endtry
---]]
+vim.cmd [[
+try
+  colorscheme darkplus
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default
+  set background=dark
+endtry
+]]
 
 -- Tokyonight
 --vim.cmd [[
@@ -14,6 +14,6 @@
 --]]
 
 -- Dogrun
-vim.cmd [[
-  colorscheme dogrun
-]]
+-- vim.cmd [[
+  --colorscheme dogrun
+--]]

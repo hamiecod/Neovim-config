@@ -15,6 +15,18 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
+local tabnine = require('cmp_tabnine.config')
+tabnine:setup({
+	max_lines = 1000;
+	max_num_results = 20;
+	sort = true;
+	run_on_every_keystroke = true;
+	snippet_placeholder = '..';
+	ignored_file_types = {
+    markdown = true
+	};
+})
+
 --   פּ ﯟ   some other good icons
 local kind_icons = {
   Text = "",
@@ -105,6 +117,7 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
+        tabnine = "[TN]",
       })[entry.source.name]
       return vim_item
     end,
@@ -114,6 +127,7 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
+    { name = "cmp_tabnine"},
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
