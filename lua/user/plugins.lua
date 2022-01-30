@@ -62,6 +62,7 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "wakatime/vim-wakatime"
+  use "chentau/marks.nvim" -- better user experience for working with vim marks
 
   -- Markdown
   use "junegunn/goyo.vim" -- Distraction free typing
