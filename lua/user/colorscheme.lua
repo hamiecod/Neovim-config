@@ -1,7 +1,7 @@
 -- darkplus (the vscode theme)
 vim.cmd [[
 try
-  colorscheme darkplus
+  colorscheme falcon
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
