@@ -62,11 +62,16 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "wakatime/vim-wakatime"
+  use "mhinz/vim-startify"
 
   -- Markdown
   use "junegunn/goyo.vim" -- Distraction free typing
   use "junegunn/limelight.vim" -- highlight the text you are working on
-  use {"iamcco/markdown-preview.nvim", run = "cd app && npm i", cmd="MarkdownPreview"}
+  use {
+      'iamcco/markdown-preview.nvim',
+      run = function() vim.fn['mkdp#util#install']() end,
+      ft = {'markdown'}
+  }
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
