@@ -183,7 +183,22 @@ local mappings = {
   },
 
   x = {
-    name = "Startify",
+    "<cmd>Startify<cr>",
+    "Startify",
+  },
+  
+  m ={
+    name = "Markdown",
+    g = { "<cmd>GenTocGFM<cr>", "Generate TOC for GitHub" },
+    m = { "<cmd>GenTocMarked<cr>", "Generate TOC for Marked" },
+    p = { "<cmd>MarkdownPreview<cr>", "Markdown Preview" },
+  },
+
+  z = {
+    name = "Color Column",
+    s = { "<cmd>set colorcolumn=80<cr>", "Set small color column" },
+    m = { "<cmd>set colorcolumn=100<cr>", "Set medium color column" },
+    w = { "<cmd>set colorcolumn=120<cr>", "Set wide color column" },
   }
 }
 
