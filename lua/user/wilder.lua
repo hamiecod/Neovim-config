@@ -1,4 +1,4 @@
-vim.cmd[[
+vim.cmd [[
 call wilder#setup({'modes': [':', '/', '?']})
 
 call wilder#set_option('pipeline', [
@@ -18,7 +18,9 @@ call wilder#set_option('pipeline', [
       \     }),
       \     wilder#cmdline_pipeline({
       \       'fuzzy': 1,
-      \       'fuzzy_filter': has('nvim') ? wilder#lua_fzy_filter() : wilder#vim_fuzzy_filter(), \     }), \     [
+      \       'fuzzy_filter': has('nvim') ? wilder#lua_fzy_filter() : wilder#vim_fuzzy_filter(), 
+      \     }), 
+      \     [
       \       wilder#check({_, x -> empty(x)}),
       \       wilder#history(),
       \     ],
