@@ -64,6 +64,14 @@ return packer.startup(function(use)
   use "wakatime/vim-wakatime"
   use "mhinz/vim-startify"
 
+  -- wilder
+  use "gelguy/wilder.nvim"
+  use "roxma/nvim-yarp"
+  use "roxma/vim-hug-neovim-rpc"
+  use "sharkdp/fd"
+  use "nixprime/cpsm"
+  use "romgrk/fzy-lua-native"
+
   -- Markdown
   use "junegunn/goyo.vim" -- Distraction free typing
   use "junegunn/limelight.vim" -- highlight the text you are working on
