@@ -17,6 +17,7 @@ vim.cmd [[
     autocmd!
     autocmd FileType markdown setlocal wrap
     autocmd FileType markdown setlocal spell
+    autocmd BufRead,BufNewFile markdown setlocal textwidth=80
   augroup end
 
   augroup _auto_resize
