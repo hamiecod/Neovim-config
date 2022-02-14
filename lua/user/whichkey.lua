@@ -200,6 +200,12 @@ local mappings = {
     m = { "<cmd>set colorcolumn=100<cr>", "Set medium color column" },
     w = { "<cmd>set colorcolumn=120<cr>", "Set wide color column" },
     u = { "<cmd>set colorcolumn=0<cr>", "Unset color column" }
+  },
+
+  n = {
+    name = "Neorg",
+    s = { "<cmd>NeorgStart<cr>", "Start Neorg" },
+    c = { "<cmd>Neorg workspace ", "Change workspace" },
   }
 }
 
