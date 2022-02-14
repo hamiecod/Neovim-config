@@ -63,6 +63,17 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "wakatime/vim-wakatime"
   use "mhinz/vim-startify"
+  use {
+    "nvim-neorg/neorg",
+    ft = "norg",
+    after = "nvim-treesitter",
+    config = function() 
+      require('neorg').setup {
+
+      }
+    end,
+    requires = "nvim-lua/plenary.nvim"
+  }
 
   -- wilder
   use "gelguy/wilder.nvim"
