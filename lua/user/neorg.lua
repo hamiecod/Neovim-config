@@ -1,6 +1,8 @@
 require('neorg').setup {
   load = {
     ["core.defaults"] = {},
+
+    -- Used for managing workspaces
     ["core.norg.dirman"] = {
       config = {
         workspaces = {
@@ -8,6 +10,9 @@ require('neorg').setup {
           notes = "~/Documents/Technical-Jargon/",
         }
       }
-    }
+    },
+
+    -- Icons in Neorg
+    ["core.norg.concealer"] = {},
   }
 }
