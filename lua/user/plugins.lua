@@ -74,6 +74,8 @@ return packer.startup(function(use)
     end,
     requires = "nvim-lua/plenary.nvim"
   }
+  use "Pocco81/TrueZen.nvim"
+  use "sotte/presenting.vim"
 
   -- wilder
   use "gelguy/wilder.nvim"
