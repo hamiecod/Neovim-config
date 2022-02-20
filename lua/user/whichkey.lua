@@ -95,6 +95,8 @@ local mappings = {
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+  ["i"] = { "<cmd>PresentingStart<cr>", "Start Presenting" },
+  ["C"] = { "<cmd>w | execute 'TermExec cmd=\"' . (readfile(getcwd() . '/vimcomp'))[0] '\"'<cr>", "Compile Project"},
 
   p = {
     name = "Packer",
