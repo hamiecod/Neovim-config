@@ -208,6 +208,12 @@ local mappings = {
     name = "Neorg",
     s = { "<cmd>NeorgStart<cr>", "Start Neorg" },
     c = { "<cmd>Neorg workspace ", "Change workspace" },
+  },
+
+  v = {
+    name = "VimTex",
+    c = { "<cmd>VimtexCompile<cr>", "Compile" },
+    t = { "<cmd>VimtexTocToggle<cr>", "Table of contents "}
   }
 }
 

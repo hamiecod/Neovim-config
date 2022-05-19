@@ -77,6 +77,11 @@ return packer.startup(function(use)
   use "Pocco81/TrueZen.nvim"
   use "sotte/presenting.vim"
 
+  -- LaTeX plugins
+  use "lervag/vimtex"
+  use "donRaphaco/neotex"
+  use "emakman/neovim-latex-previewer"
+
   -- wilder
   use "gelguy/wilder.nvim"
   use "roxma/nvim-yarp"
@@ -118,6 +123,8 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "SirVer/ultisnips"
+  use "honza/vim-snippets"
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
@@ -134,6 +141,7 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "p00f/nvim-ts-rainbow"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
