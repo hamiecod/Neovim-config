@@ -92,5 +92,14 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+    bookmarks = {
+      selected_browser = 'chrome',
+      url_open_command = 'xdg-open',
+      url_open_plugin = nil,
+      full_path = true,
+      firefox_profile_name = nil,
+    }
   },
 }
+require('telescope').load_extension('bookmarks')
+require('telescope').load_extension('repo')
