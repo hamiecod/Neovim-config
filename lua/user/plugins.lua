@@ -57,7 +57,7 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
-  use "lukas-reineke/indent-blankline.nvim" 
+  use "lukas-reineke/indent-blankline.nvim"
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
@@ -67,7 +67,7 @@ return packer.startup(function(use)
     "nvim-neorg/neorg",
     ft = "norg",
     after = "nvim-treesitter",
-    config = function() 
+    config = function()
       require('neorg').setup {
 
       }
@@ -77,6 +77,7 @@ return packer.startup(function(use)
   use "Pocco81/TrueZen.nvim"
   use "sotte/presenting.vim"
   use "ggandor/lightspeed.nvim"
+  use "airblade/vim-rooter"
 
   -- LaTeX plugins
   use "lervag/vimtex"
@@ -95,9 +96,9 @@ return packer.startup(function(use)
   use "junegunn/goyo.vim" -- Distraction free typing
   use "junegunn/limelight.vim" -- highlight the text you are working on
   use {
-      'iamcco/markdown-preview.nvim',
-      run = function() vim.fn['mkdp#util#install']() end,
-      ft = {'markdown'}
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
+    ft = { 'markdown' }
   }
   use "mzlogin/vim-markdown-toc"
 
@@ -119,7 +120,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
- 	use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+  use { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -135,6 +136,8 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use "dhruvmanila/telescope-bookmarks.nvim"
+  use "cljoly/telescope-repo.nvim"
 
   -- Treesitter
   use {
